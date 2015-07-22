@@ -7,46 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		29C21B001B5FBD8300631B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C21AFF1B5FBD8300631B52 /* AppDelegate.swift */; };
-		29C21B021B5FBD8300631B52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C21B011B5FBD8300631B52 /* ViewController.swift */; };
-		29C21B051B5FBD8300631B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C21B031B5FBD8300631B52 /* Main.storyboard */; };
-		29C21B071B5FBD8300631B52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C21B061B5FBD8300631B52 /* Images.xcassets */; };
-		29C21B0A1B5FBD8300631B52 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C21B081B5FBD8300631B52 /* LaunchScreen.xib */; };
-		29C21B161B5FBD8300631B52 /* zhihu_studyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C21B151B5FBD8300631B52 /* zhihu_studyTests.swift */; };
+		29C21B621B5FC78C00631B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C21B611B5FC78C00631B52 /* AppDelegate.swift */; };
+		29C21B651B5FC78C00631B52 /* zhihu_study.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29C21B631B5FC78C00631B52 /* zhihu_study.xcdatamodeld */; };
+		29C21B671B5FC78C00631B52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C21B661B5FC78C00631B52 /* ViewController.swift */; };
+		29C21B6A1B5FC78C00631B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C21B681B5FC78C00631B52 /* Main.storyboard */; };
+		29C21B6C1B5FC78C00631B52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C21B6B1B5FC78C00631B52 /* Images.xcassets */; };
+		29C21B6F1B5FC78C00631B52 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C21B6D1B5FC78C00631B52 /* LaunchScreen.xib */; };
+		29C21B7B1B5FC78C00631B52 /* zhihu_studyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C21B7A1B5FC78C00631B52 /* zhihu_studyTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		29C21B101B5FBD8300631B52 /* PBXContainerItemProxy */ = {
+		29C21B751B5FC78C00631B52 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 29C21AF21B5FBD8300631B52 /* Project object */;
+			containerPortal = 29C21B541B5FC78C00631B52 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 29C21AF91B5FBD8300631B52;
+			remoteGlobalIDString = 29C21B5B1B5FC78C00631B52;
 			remoteInfo = zhihu.study;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		29C21AFA1B5FBD8300631B52 /* zhihu.study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhihu.study.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		29C21AFE1B5FBD8300631B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29C21AFF1B5FBD8300631B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29C21B011B5FBD8300631B52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		29C21B041B5FBD8300631B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		29C21B061B5FBD8300631B52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		29C21B091B5FBD8300631B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		29C21B0F1B5FBD8300631B52 /* zhihu.studyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zhihu.studyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		29C21B141B5FBD8300631B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29C21B151B5FBD8300631B52 /* zhihu_studyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zhihu_studyTests.swift; sourceTree = "<group>"; };
+		29C21B5C1B5FC78C00631B52 /* zhihu.study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhihu.study.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C21B601B5FC78C00631B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29C21B611B5FC78C00631B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		29C21B641B5FC78C00631B52 /* zhihu_study.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = zhihu_study.xcdatamodel; sourceTree = "<group>"; };
+		29C21B661B5FC78C00631B52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29C21B691B5FC78C00631B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		29C21B6B1B5FC78C00631B52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		29C21B6E1B5FC78C00631B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		29C21B741B5FC78C00631B52 /* zhihu.studyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zhihu.studyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C21B791B5FC78C00631B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29C21B7A1B5FC78C00631B52 /* zhihu_studyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zhihu_studyTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		29C21AF71B5FBD8300631B52 /* Frameworks */ = {
+		29C21B591B5FC78C00631B52 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29C21B0C1B5FBD8300631B52 /* Frameworks */ = {
+		29C21B711B5FC78C00631B52 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,58 +58,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		29C21AF11B5FBD8300631B52 = {
+		29C21B531B5FC78C00631B52 = {
 			isa = PBXGroup;
 			children = (
-				29C21AFC1B5FBD8300631B52 /* zhihu.study */,
-				29C21B121B5FBD8300631B52 /* zhihu.studyTests */,
-				29C21AFB1B5FBD8300631B52 /* Products */,
+				29C21B5E1B5FC78C00631B52 /* zhihu.study */,
+				29C21B771B5FC78C00631B52 /* zhihu.studyTests */,
+				29C21B5D1B5FC78C00631B52 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		29C21AFB1B5FBD8300631B52 /* Products */ = {
+		29C21B5D1B5FC78C00631B52 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				29C21AFA1B5FBD8300631B52 /* zhihu.study.app */,
-				29C21B0F1B5FBD8300631B52 /* zhihu.studyTests.xctest */,
+				29C21B5C1B5FC78C00631B52 /* zhihu.study.app */,
+				29C21B741B5FC78C00631B52 /* zhihu.studyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29C21AFC1B5FBD8300631B52 /* zhihu.study */ = {
+		29C21B5E1B5FC78C00631B52 /* zhihu.study */ = {
 			isa = PBXGroup;
 			children = (
-				29C21AFF1B5FBD8300631B52 /* AppDelegate.swift */,
-				29C21B011B5FBD8300631B52 /* ViewController.swift */,
-				29C21B031B5FBD8300631B52 /* Main.storyboard */,
-				29C21B061B5FBD8300631B52 /* Images.xcassets */,
-				29C21B081B5FBD8300631B52 /* LaunchScreen.xib */,
-				29C21AFD1B5FBD8300631B52 /* Supporting Files */,
+				29C21B611B5FC78C00631B52 /* AppDelegate.swift */,
+				29C21B661B5FC78C00631B52 /* ViewController.swift */,
+				29C21B681B5FC78C00631B52 /* Main.storyboard */,
+				29C21B6B1B5FC78C00631B52 /* Images.xcassets */,
+				29C21B6D1B5FC78C00631B52 /* LaunchScreen.xib */,
+				29C21B631B5FC78C00631B52 /* zhihu_study.xcdatamodeld */,
+				29C21B5F1B5FC78C00631B52 /* Supporting Files */,
 			);
 			path = zhihu.study;
 			sourceTree = "<group>";
 		};
-		29C21AFD1B5FBD8300631B52 /* Supporting Files */ = {
+		29C21B5F1B5FC78C00631B52 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				29C21AFE1B5FBD8300631B52 /* Info.plist */,
+				29C21B601B5FC78C00631B52 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		29C21B121B5FBD8300631B52 /* zhihu.studyTests */ = {
+		29C21B771B5FC78C00631B52 /* zhihu.studyTests */ = {
 			isa = PBXGroup;
 			children = (
-				29C21B151B5FBD8300631B52 /* zhihu_studyTests.swift */,
-				29C21B131B5FBD8300631B52 /* Supporting Files */,
+				29C21B7A1B5FC78C00631B52 /* zhihu_studyTests.swift */,
+				29C21B781B5FC78C00631B52 /* Supporting Files */,
 			);
 			path = zhihu.studyTests;
 			sourceTree = "<group>";
 		};
-		29C21B131B5FBD8300631B52 /* Supporting Files */ = {
+		29C21B781B5FC78C00631B52 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				29C21B141B5FBD8300631B52 /* Info.plist */,
+				29C21B791B5FC78C00631B52 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -115,13 +118,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		29C21AF91B5FBD8300631B52 /* zhihu.study */ = {
+		29C21B5B1B5FC78C00631B52 /* zhihu.study */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 29C21B191B5FBD8300631B52 /* Build configuration list for PBXNativeTarget "zhihu.study" */;
+			buildConfigurationList = 29C21B7E1B5FC78C00631B52 /* Build configuration list for PBXNativeTarget "zhihu.study" */;
 			buildPhases = (
-				29C21AF61B5FBD8300631B52 /* Sources */,
-				29C21AF71B5FBD8300631B52 /* Frameworks */,
-				29C21AF81B5FBD8300631B52 /* Resources */,
+				29C21B581B5FC78C00631B52 /* Sources */,
+				29C21B591B5FC78C00631B52 /* Frameworks */,
+				29C21B5A1B5FC78C00631B52 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -129,46 +132,46 @@
 			);
 			name = zhihu.study;
 			productName = zhihu.study;
-			productReference = 29C21AFA1B5FBD8300631B52 /* zhihu.study.app */;
+			productReference = 29C21B5C1B5FC78C00631B52 /* zhihu.study.app */;
 			productType = "com.apple.product-type.application";
 		};
-		29C21B0E1B5FBD8300631B52 /* zhihu.studyTests */ = {
+		29C21B731B5FC78C00631B52 /* zhihu.studyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 29C21B1C1B5FBD8300631B52 /* Build configuration list for PBXNativeTarget "zhihu.studyTests" */;
+			buildConfigurationList = 29C21B811B5FC78C00631B52 /* Build configuration list for PBXNativeTarget "zhihu.studyTests" */;
 			buildPhases = (
-				29C21B0B1B5FBD8300631B52 /* Sources */,
-				29C21B0C1B5FBD8300631B52 /* Frameworks */,
-				29C21B0D1B5FBD8300631B52 /* Resources */,
+				29C21B701B5FC78C00631B52 /* Sources */,
+				29C21B711B5FC78C00631B52 /* Frameworks */,
+				29C21B721B5FC78C00631B52 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				29C21B111B5FBD8300631B52 /* PBXTargetDependency */,
+				29C21B761B5FC78C00631B52 /* PBXTargetDependency */,
 			);
 			name = zhihu.studyTests;
 			productName = zhihu.studyTests;
-			productReference = 29C21B0F1B5FBD8300631B52 /* zhihu.studyTests.xctest */;
+			productReference = 29C21B741B5FC78C00631B52 /* zhihu.studyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		29C21AF21B5FBD8300631B52 /* Project object */ = {
+		29C21B541B5FC78C00631B52 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = shawn;
 				TargetAttributes = {
-					29C21AF91B5FBD8300631B52 = {
+					29C21B5B1B5FC78C00631B52 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
-					29C21B0E1B5FBD8300631B52 = {
+					29C21B731B5FC78C00631B52 = {
 						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = 29C21AF91B5FBD8300631B52;
+						TestTargetID = 29C21B5B1B5FC78C00631B52;
 					};
 				};
 			};
-			buildConfigurationList = 29C21AF51B5FBD8300631B52 /* Build configuration list for PBXProject "zhihu.study" */;
+			buildConfigurationList = 29C21B571B5FC78C00631B52 /* Build configuration list for PBXProject "zhihu.study" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -176,29 +179,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 29C21AF11B5FBD8300631B52;
-			productRefGroup = 29C21AFB1B5FBD8300631B52 /* Products */;
+			mainGroup = 29C21B531B5FC78C00631B52;
+			productRefGroup = 29C21B5D1B5FC78C00631B52 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				29C21AF91B5FBD8300631B52 /* zhihu.study */,
-				29C21B0E1B5FBD8300631B52 /* zhihu.studyTests */,
+				29C21B5B1B5FC78C00631B52 /* zhihu.study */,
+				29C21B731B5FC78C00631B52 /* zhihu.studyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		29C21AF81B5FBD8300631B52 /* Resources */ = {
+		29C21B5A1B5FC78C00631B52 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29C21B051B5FBD8300631B52 /* Main.storyboard in Resources */,
-				29C21B0A1B5FBD8300631B52 /* LaunchScreen.xib in Resources */,
-				29C21B071B5FBD8300631B52 /* Images.xcassets in Resources */,
+				29C21B6A1B5FC78C00631B52 /* Main.storyboard in Resources */,
+				29C21B6F1B5FC78C00631B52 /* LaunchScreen.xib in Resources */,
+				29C21B6C1B5FC78C00631B52 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29C21B0D1B5FBD8300631B52 /* Resources */ = {
+		29C21B721B5FC78C00631B52 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -208,46 +211,47 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		29C21AF61B5FBD8300631B52 /* Sources */ = {
+		29C21B581B5FC78C00631B52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29C21B021B5FBD8300631B52 /* ViewController.swift in Sources */,
-				29C21B001B5FBD8300631B52 /* AppDelegate.swift in Sources */,
+				29C21B671B5FC78C00631B52 /* ViewController.swift in Sources */,
+				29C21B651B5FC78C00631B52 /* zhihu_study.xcdatamodeld in Sources */,
+				29C21B621B5FC78C00631B52 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29C21B0B1B5FBD8300631B52 /* Sources */ = {
+		29C21B701B5FC78C00631B52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29C21B161B5FBD8300631B52 /* zhihu_studyTests.swift in Sources */,
+				29C21B7B1B5FC78C00631B52 /* zhihu_studyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		29C21B111B5FBD8300631B52 /* PBXTargetDependency */ = {
+		29C21B761B5FC78C00631B52 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 29C21AF91B5FBD8300631B52 /* zhihu.study */;
-			targetProxy = 29C21B101B5FBD8300631B52 /* PBXContainerItemProxy */;
+			target = 29C21B5B1B5FC78C00631B52 /* zhihu.study */;
+			targetProxy = 29C21B751B5FC78C00631B52 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		29C21B031B5FBD8300631B52 /* Main.storyboard */ = {
+		29C21B681B5FC78C00631B52 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				29C21B041B5FBD8300631B52 /* Base */,
+				29C21B691B5FC78C00631B52 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		29C21B081B5FBD8300631B52 /* LaunchScreen.xib */ = {
+		29C21B6D1B5FC78C00631B52 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				29C21B091B5FBD8300631B52 /* Base */,
+				29C21B6E1B5FC78C00631B52 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -255,7 +259,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		29C21B171B5FBD8300631B52 /* Debug */ = {
+		29C21B7C1B5FC78C00631B52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -300,7 +304,7 @@
 			};
 			name = Debug;
 		};
-		29C21B181B5FBD8300631B52 /* Release */ = {
+		29C21B7D1B5FC78C00631B52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -338,7 +342,7 @@
 			};
 			name = Release;
 		};
-		29C21B1A1B5FBD8300631B52 /* Debug */ = {
+		29C21B7F1B5FC78C00631B52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -348,7 +352,7 @@
 			};
 			name = Debug;
 		};
-		29C21B1B1B5FBD8300631B52 /* Release */ = {
+		29C21B801B5FC78C00631B52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -358,7 +362,7 @@
 			};
 			name = Release;
 		};
-		29C21B1D1B5FBD8300631B52 /* Debug */ = {
+		29C21B821B5FC78C00631B52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -377,7 +381,7 @@
 			};
 			name = Debug;
 		};
-		29C21B1E1B5FBD8300631B52 /* Release */ = {
+		29C21B831B5FC78C00631B52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -395,32 +399,45 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		29C21AF51B5FBD8300631B52 /* Build configuration list for PBXProject "zhihu.study" */ = {
+		29C21B571B5FC78C00631B52 /* Build configuration list for PBXProject "zhihu.study" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				29C21B171B5FBD8300631B52 /* Debug */,
-				29C21B181B5FBD8300631B52 /* Release */,
+				29C21B7C1B5FC78C00631B52 /* Debug */,
+				29C21B7D1B5FC78C00631B52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		29C21B191B5FBD8300631B52 /* Build configuration list for PBXNativeTarget "zhihu.study" */ = {
+		29C21B7E1B5FC78C00631B52 /* Build configuration list for PBXNativeTarget "zhihu.study" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				29C21B1A1B5FBD8300631B52 /* Debug */,
-				29C21B1B1B5FBD8300631B52 /* Release */,
+				29C21B7F1B5FC78C00631B52 /* Debug */,
+				29C21B801B5FC78C00631B52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		29C21B1C1B5FBD8300631B52 /* Build configuration list for PBXNativeTarget "zhihu.studyTests" */ = {
+		29C21B811B5FC78C00631B52 /* Build configuration list for PBXNativeTarget "zhihu.studyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				29C21B1D1B5FBD8300631B52 /* Debug */,
-				29C21B1E1B5FBD8300631B52 /* Release */,
+				29C21B821B5FC78C00631B52 /* Debug */,
+				29C21B831B5FC78C00631B52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		29C21B631B5FC78C00631B52 /* zhihu_study.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				29C21B641B5FC78C00631B52 /* zhihu_study.xcdatamodel */,
+			);
+			currentVersion = 29C21B641B5FC78C00631B52 /* zhihu_study.xcdatamodel */;
+			path = zhihu_study.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 29C21AF21B5FBD8300631B52 /* Project object */;
+	rootObject = 29C21B541B5FC78C00631B52 /* Project object */;
 }
