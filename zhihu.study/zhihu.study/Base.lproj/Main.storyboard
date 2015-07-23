@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ayC-C1-LKD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -40,11 +40,12 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="imageView" destination="jnZ-ZY-Hfp" id="IHx-Xp-c4u"/>
+                        <segue destination="ayC-C1-LKD" kind="presentation" identifier="show news" modalTransitionStyle="crossDissolve" id="6G3-Oy-jQG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-167" y="282"/>
+            <point key="canvasLocation" x="-26" y="100"/>
         </scene>
         <!--Stories View Controller-->
         <scene sceneID="c9d-6q-rGE">
@@ -144,7 +145,6 @@
                                         <connections>
                                             <outlet property="caption" destination="Gxe-wx-aCx" id="iW8-7v-ugH"/>
                                             <outlet property="imageview" destination="RSc-L7-Zq9" id="Hz2-vT-WyZ"/>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="DRh-nU-5F8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -174,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkn-z9-rAN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="518" y="260"/>
+            <point key="canvasLocation" x="673" y="109"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Y18-88-NhX">
@@ -192,6 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgS-TK-NVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="520" y="1090"/>
         </scene>
     </scenes>
     <resources>

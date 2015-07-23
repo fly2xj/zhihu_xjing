@@ -34,10 +34,13 @@ class StoriesViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     // MARK: - tableview datasource
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return newsManager.sharedManager.news![section].news!.count
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 3
+        if let count = newsManager.sharedManager.news?.count {
+            return count
+        }
+        return 0
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if let cell = tableview.dequeueReusableCellWithIdentifier("storiesCell", forIndexPath: indexPath) as? StoriesTableViewCell {

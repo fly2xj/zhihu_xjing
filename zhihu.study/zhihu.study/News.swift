@@ -11,15 +11,15 @@ import Alamofire
 import SwiftyJSON
 
 class News {
-    let images: [String]?
-    let title: String
+    let images: [String?]?
+    let title: String?
     let type: Int = 0
-    let id: Int
+    let id: Int?
     let gaPrefix: Int?
     var multiPic: Bool = false
     var readed = false
     
-    init(id:Int, title: String, images: [String]? = nil, multipic: Bool? = false, gaprefix: Int? = 0) {
+    init(id:Int?, title: String?, images: [String?]? = nil, multipic: Bool? = false, gaprefix: Int? = 0) {
         self.images = images
         self.title = title
         self.id = id
@@ -41,7 +41,13 @@ class NewsList {
         date = json["date"].string?.toInt()
         if let stories = json["stories"].array {
             for story in stories {
-                
+                let title = story["title"].string
+                let id = story["id"].int
+                let multipic = story["multipic"].bool
+                let imgArr = story["images"].array
+                let images = imgArr?.map({$0.string})
+                let newStory = News(id: id, title: title, images: images, multipic: multipic, gaprefix: 0)
+                news?.append(newStory)
             }
         }
     }
@@ -51,7 +57,7 @@ class NewsList {
 private let _allnews = newsManager()
 class newsManager {
 
-    var news: [Int:NewsList]?
+    var news: [NewsList]?
 
     class var sharedManager: newsManager {
         return _allnews
@@ -68,11 +74,11 @@ class newsManager {
         Alamofire.Manager.sharedInstance.request(.GET, url.latestNews, parameters: nil, encoding: ParameterEncoding.URL).responseJSON(options: NSJSONReadingOptions.MutableContainers) { (_, _, data, error) -> Void in
             if let result: AnyObject = data{
                 let json = JSON(result)
-                let list = NewsList(json: json)
-                self.news?[list.date!] = list
+                self.news?.append(NewsList(json: json))
+                
+                complete()
             }
                 
         }
-        complete()
     }
 }

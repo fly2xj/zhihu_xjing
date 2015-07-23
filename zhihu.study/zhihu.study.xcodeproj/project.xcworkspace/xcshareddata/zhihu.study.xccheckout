@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>42F8BE3A-71D4-4C0A-9E04-FA564B3BE717</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>zhihu.study</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>068BB558772DDB520FE2A676CC5E86BDF73396DE</key>
 		<string>https://github.com/fly2xj/zhihu_xjing.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>zhihu.study/zhihu.study.xcodeproj/project.xcworkspace</string>
+	<string>zhihu.study/zhihu.study.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>068BB558772DDB520FE2A676CC5E86BDF73396DE</key>
