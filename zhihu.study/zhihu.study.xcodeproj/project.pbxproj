@@ -16,6 +16,10 @@
 		29C21B7B1B5FC78C00631B52 /* zhihu_studyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C21B7A1B5FC78C00631B52 /* zhihu_studyTests.swift */; };
 		29C21B871B608A9200631B52 /* LaunchImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C21B861B608A9200631B52 /* LaunchImageViewController.swift */; };
 		29C21B8C1B608D2600631B52 /* launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29C21B8B1B608D2600631B52 /* launch.jpg */; };
+		29C21B8F1B60C28300631B52 /* StoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C21B8E1B60C28300631B52 /* StoriesTableViewCell.swift */; };
+		29C21B911B60C3B900631B52 /* StoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C21B901B60C3B900631B52 /* StoriesViewController.swift */; };
+		29C21B941B61053300631B52 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C21B931B61053300631B52 /* News.swift */; };
+		29C21B961B61101000631B52 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C21B951B61101000631B52 /* Constant.swift */; };
 		B5779946B6B9CF1935463D20 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740A869E12AF265DAB7DF8E9 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -44,6 +48,10 @@
 		29C21B7A1B5FC78C00631B52 /* zhihu_studyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zhihu_studyTests.swift; sourceTree = "<group>"; };
 		29C21B861B608A9200631B52 /* LaunchImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchImageViewController.swift; sourceTree = "<group>"; };
 		29C21B8B1B608D2600631B52 /* launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch.jpg; sourceTree = "<group>"; };
+		29C21B8E1B60C28300631B52 /* StoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesTableViewCell.swift; sourceTree = "<group>"; };
+		29C21B901B60C3B900631B52 /* StoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesViewController.swift; sourceTree = "<group>"; };
+		29C21B931B61053300631B52 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		29C21B951B61101000631B52 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		740A869E12AF265DAB7DF8E9 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C157D1C9DCE5915D774856 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +98,7 @@
 		29C21B5E1B5FC78C00631B52 /* zhihu.study */ = {
 			isa = PBXGroup;
 			children = (
+				29C21B921B61051A00631B52 /* modal */,
 				29C21B851B608A7500631B52 /* controllers */,
 				29C21B611B5FC78C00631B52 /* AppDelegate.swift */,
 				29C21B661B5FC78C00631B52 /* ViewController.swift */,
@@ -132,8 +141,19 @@
 			isa = PBXGroup;
 			children = (
 				29C21B861B608A9200631B52 /* LaunchImageViewController.swift */,
+				29C21B8E1B60C28300631B52 /* StoriesTableViewCell.swift */,
+				29C21B901B60C3B900631B52 /* StoriesViewController.swift */,
 			);
 			name = controllers;
+			sourceTree = "<group>";
+		};
+		29C21B921B61051A00631B52 /* modal */ = {
+			isa = PBXGroup;
+			children = (
+				29C21B931B61053300631B52 /* News.swift */,
+				29C21B951B61101000631B52 /* Constant.swift */,
+			);
+			name = modal;
 			sourceTree = "<group>";
 		};
 		5748765DBD51071FB113D37F /* Frameworks */ = {
@@ -305,8 +325,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C21B911B60C3B900631B52 /* StoriesViewController.swift in Sources */,
 				29C21B671B5FC78C00631B52 /* ViewController.swift in Sources */,
 				29C21B651B5FC78C00631B52 /* zhihu_study.xcdatamodeld in Sources */,
+				29C21B961B61101000631B52 /* Constant.swift in Sources */,
+				29C21B8F1B60C28300631B52 /* StoriesTableViewCell.swift in Sources */,
+				29C21B941B61053300631B52 /* News.swift in Sources */,
 				29C21B621B5FC78C00631B52 /* AppDelegate.swift in Sources */,
 				29C21B871B608A9200631B52 /* LaunchImageViewController.swift in Sources */,
 			);
