@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Launch Image View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LaunchImageViewController" customModule="zhihu_study" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,37 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jnZ-ZY-Hfp">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash_Logo_Plus" translatesAutoresizingMaskIntoConstraints="NO" id="6KM-w1-AZH">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jnZ-ZY-Hfp" secondAttribute="trailing" id="27n-2c-NvG"/>
+                            <constraint firstItem="jnZ-ZY-Hfp" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="46R-d4-H9u"/>
+                            <constraint firstItem="6KM-w1-AZH" firstAttribute="trailing" secondItem="jnZ-ZY-Hfp" secondAttribute="trailing" id="BeQ-s0-oMl"/>
+                            <constraint firstItem="6KM-w1-AZH" firstAttribute="leading" secondItem="jnZ-ZY-Hfp" secondAttribute="leading" id="Hkd-Vj-36f"/>
+                            <constraint firstItem="jnZ-ZY-Hfp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MCf-nO-Rbx"/>
+                            <constraint firstItem="jnZ-ZY-Hfp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Peq-ug-bWe"/>
+                            <constraint firstItem="6KM-w1-AZH" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="bPU-IJ-l0V"/>
+                            <constraint firstItem="6KM-w1-AZH" firstAttribute="top" secondItem="jnZ-ZY-Hfp" secondAttribute="top" id="bSw-12-UL4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="jnZ-ZY-Hfp" id="IHx-Xp-c4u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="445" y="377"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Splash_Logo_Plus" width="768" height="285"/>
+        <image name="launch.jpg" width="640" height="1136"/>
+    </resources>
 </document>
