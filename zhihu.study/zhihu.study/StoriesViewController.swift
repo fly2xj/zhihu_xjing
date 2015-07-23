@@ -34,16 +34,14 @@ class StoriesViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     // MARK: - tableview datasource
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return newsManager.sharedManager.news![section].news!.count
+        return newsManager.sharedManager.news[section].news.count
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        if let count = newsManager.sharedManager.news?.count {
-            return count
-        }
-        return 0
+        return newsManager.sharedManager.news.count
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if let cell = tableview.dequeueReusableCellWithIdentifier("storiesCell", forIndexPath: indexPath) as? StoriesTableViewCell {
+            cell.caption?.text = newsManager.sharedManager.news[indexPath.section].news[indexPath.row].title
             return cell
         }
         return StoriesTableViewCell()

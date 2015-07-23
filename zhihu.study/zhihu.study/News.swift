@@ -33,7 +33,7 @@ class News {
 class NewsList {
     var date: Int?
     var topnews: [News]?
-    var news: [News]?
+    var news: [News] = [News]()
     
     init() {
     }
@@ -43,11 +43,11 @@ class NewsList {
             for story in stories {
                 let title = story["title"].string
                 let id = story["id"].int
-                let multipic = story["multipic"].bool
+                let multipic = story["multipic"].bool ?? false
                 let imgArr = story["images"].array
                 let images = imgArr?.map({$0.string})
                 let newStory = News(id: id, title: title, images: images, multipic: multipic, gaprefix: 0)
-                news?.append(newStory)
+                news.append(newStory)
             }
         }
     }
@@ -57,7 +57,7 @@ class NewsList {
 private let _allnews = newsManager()
 class newsManager {
 
-    var news: [NewsList]?
+    var news = [NewsList]()
 
     class var sharedManager: newsManager {
         return _allnews
@@ -74,7 +74,10 @@ class newsManager {
         Alamofire.Manager.sharedInstance.request(.GET, url.latestNews, parameters: nil, encoding: ParameterEncoding.URL).responseJSON(options: NSJSONReadingOptions.MutableContainers) { (_, _, data, error) -> Void in
             if let result: AnyObject = data{
                 let json = JSON(result)
-                self.news?.append(NewsList(json: json))
+                let list = NewsList(json: json)
+                //print("\(json)")
+                print("\(list)")
+                self.news.append(list)
                 
                 complete()
             }
