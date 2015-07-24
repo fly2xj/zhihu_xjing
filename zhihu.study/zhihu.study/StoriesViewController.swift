@@ -66,6 +66,7 @@ class StoriesViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UILabel()
         view.backgroundColor = UIColor(red: 0.098, green: 0.565, blue: 0.827, alpha: 1)
+        
         view.textColor = UIColor.whiteColor()
         view.textAlignment = .Center
         
