@@ -10,4 +10,5 @@ import Foundation
 
 struct url {
     static let latestNews = "http://news-at.zhihu.com/api/4/news/latest"
+    static let newsbefore = "http://news-at.zhihu.com/api/4/news/before/"
 }

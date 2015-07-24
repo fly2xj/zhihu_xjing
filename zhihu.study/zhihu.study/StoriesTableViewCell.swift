@@ -11,12 +11,24 @@ import UIKit
 class StoriesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var caption: UILabel!
-    @IBOutlet weak var imageview: UIImageView!
-    
+    @IBOutlet weak var thumbview: UIImageView!
+    @IBOutlet weak var multiLabel: UILabel!
+
+    var thumburl: String? {
+        didSet{
+            if let url = NSURL(string: self.thumburl!){
+                thumbview.hnk_setImageFromURL(url)
+             }
+        }
+    }
+    var multi: Bool = false {
+        didSet {
+            multiLabel.hidden = !multi
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        caption.text = "hi"
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
@@ -24,5 +36,5 @@ class StoriesTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }
+

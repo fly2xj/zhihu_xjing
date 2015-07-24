@@ -17,6 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        newsManager.sharedManager.fetchTodayNews { () -> Void in
+            window?.rootViewController?.performSegueWithIdentifier("show news", sender: window?.rootViewController)
+           // window?.rootViewController?.presentViewController(StoriesViewController(), animated: false, completion: { () -> Void in
+                
+            //})
+        }
         return true
     }
 

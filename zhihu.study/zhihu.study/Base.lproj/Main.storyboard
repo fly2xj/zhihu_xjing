@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ayC-C1-LKD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -40,11 +40,12 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="imageView" destination="jnZ-ZY-Hfp" id="IHx-Xp-c4u"/>
+                        <segue destination="ayC-C1-LKD" kind="presentation" identifier="show news" modalTransitionStyle="crossDissolve" id="6G3-Oy-jQG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-167" y="282"/>
+            <point key="canvasLocation" x="-26" y="100"/>
         </scene>
         <!--Stories View Controller-->
         <scene sceneID="c9d-6q-rGE">
@@ -85,22 +86,14 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4jl-QD-rk7" id="nSP-Ba-hNE">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Comment_Share_Sina" translatesAutoresizingMaskIntoConstraints="NO" id="RSc-L7-Zq9">
-                                                    <rect key="frame" x="500" y="23" width="80" height="60"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="80" id="2Fb-Gy-dHs"/>
-                                                        <constraint firstAttribute="height" constant="60" id="Ijo-Pz-bCH"/>
-                                                        <constraint firstAttribute="width" secondItem="RSc-L7-Zq9" secondAttribute="height" multiplier="4:3" id="MKG-0R-uYx"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxe-wx-aCx">
-                                                    <rect key="frame" x="8" y="42" width="477" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxe-wx-aCx">
+                                                    <rect key="frame" x="8" y="8" width="474" height="89"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="❏多图" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ToS-Lf-hxR">
-                                                    <rect key="frame" x="545" y="68" width="35" height="15"/>
+                                                    <rect key="frame" x="550" y="73" width="35" height="15"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="42" id="OcC-Wi-22d"/>
@@ -114,28 +107,55 @@
                                                         </mask>
                                                     </variation>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RSc-L7-Zq9">
+                                                    <rect key="frame" x="492" y="18" width="93" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="0d7-x6-21y"/>
+                                                        <constraint firstAttribute="width" constant="80" id="2Fb-Gy-dHs"/>
+                                                        <constraint firstAttribute="width" constant="80" id="DIo-re-rhP"/>
+                                                        <constraint firstAttribute="height" constant="60" id="Ijo-Pz-bCH"/>
+                                                        <constraint firstAttribute="width" secondItem="RSc-L7-Zq9" secondAttribute="height" multiplier="4:3" id="MKG-0R-uYx"/>
+                                                        <constraint firstAttribute="width" secondItem="RSc-L7-Zq9" secondAttribute="height" multiplier="4:3" id="NWP-FE-8SN"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="2Fb-Gy-dHs"/>
+                                                            <exclude reference="DIo-re-rhP"/>
+                                                            <exclude reference="Ijo-Pz-bCH"/>
+                                                            <exclude reference="MKG-0R-uYx"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="centerY" secondItem="Gxe-wx-aCx" secondAttribute="centerY" id="2Hh-xe-Xaq"/>
                                                 <constraint firstItem="RSc-L7-Zq9" firstAttribute="leading" secondItem="nSP-Ba-hNE" secondAttribute="leading" constant="512" id="5v4-iJ-xeL"/>
+                                                <constraint firstItem="RSc-L7-Zq9" firstAttribute="top" secondItem="nSP-Ba-hNE" secondAttribute="topMargin" constant="15" id="FdT-ox-mYM"/>
+                                                <constraint firstItem="Gxe-wx-aCx" firstAttribute="top" secondItem="nSP-Ba-hNE" secondAttribute="topMargin" id="L4s-wL-kc6"/>
                                                 <constraint firstAttribute="centerY" secondItem="RSc-L7-Zq9" secondAttribute="centerY" id="MsY-0Z-0gW"/>
                                                 <constraint firstItem="ToS-Lf-hxR" firstAttribute="trailing" secondItem="RSc-L7-Zq9" secondAttribute="trailing" id="Njv-yO-MJz"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="RSc-L7-Zq9" secondAttribute="trailing" constant="-7" id="RPq-M0-PHx"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="RSc-L7-Zq9" secondAttribute="bottom" constant="14" id="URf-y1-dgH"/>
+                                                <constraint firstItem="RSc-L7-Zq9" firstAttribute="top" secondItem="nSP-Ba-hNE" secondAttribute="topMargin" constant="15" id="WUy-cw-8Ak"/>
                                                 <constraint firstItem="ToS-Lf-hxR" firstAttribute="top" secondItem="nSP-Ba-hNE" secondAttribute="topMargin" constant="54" id="WnG-UG-jAQ"/>
-                                                <constraint firstItem="RSc-L7-Zq9" firstAttribute="leading" secondItem="Gxe-wx-aCx" secondAttribute="trailing" constant="15" id="Y6i-vq-akc"/>
+                                                <constraint firstItem="RSc-L7-Zq9" firstAttribute="leading" secondItem="Gxe-wx-aCx" secondAttribute="trailing" constant="10" id="Y6i-vq-akc"/>
                                                 <constraint firstItem="Gxe-wx-aCx" firstAttribute="leading" secondItem="nSP-Ba-hNE" secondAttribute="leadingMargin" id="Zaj-3C-3gT"/>
-                                                <constraint firstAttribute="trailing" secondItem="RSc-L7-Zq9" secondAttribute="trailing" constant="20" id="aMc-6y-KTr"/>
+                                                <constraint firstAttribute="trailing" secondItem="RSc-L7-Zq9" secondAttribute="trailing" constant="15" id="aMc-6y-KTr"/>
                                                 <constraint firstItem="ToS-Lf-hxR" firstAttribute="bottom" secondItem="RSc-L7-Zq9" secondAttribute="bottom" id="eOe-jN-PFw"/>
                                                 <constraint firstItem="RSc-L7-Zq9" firstAttribute="top" secondItem="Gxe-wx-aCx" secondAttribute="bottom" constant="-40" id="mlk-cI-FMX"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Gxe-wx-aCx" secondAttribute="bottom" id="nql-b9-6Zz"/>
+                                                <constraint firstItem="RSc-L7-Zq9" firstAttribute="top" secondItem="nSP-Ba-hNE" secondAttribute="topMargin" constant="15" id="ot1-nw-qPN"/>
                                                 <constraint firstItem="RSc-L7-Zq9" firstAttribute="top" secondItem="nSP-Ba-hNE" secondAttribute="topMargin" constant="15" id="unD-mu-QBh"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="5v4-iJ-xeL"/>
+                                                    <exclude reference="FdT-ox-mYM"/>
                                                     <exclude reference="RPq-M0-PHx"/>
                                                     <exclude reference="URf-y1-dgH"/>
+                                                    <exclude reference="WUy-cw-8Ak"/>
                                                     <exclude reference="mlk-cI-FMX"/>
+                                                    <exclude reference="ot1-nw-qPN"/>
                                                     <exclude reference="unD-mu-QBh"/>
                                                     <exclude reference="WnG-UG-jAQ"/>
                                                 </mask>
@@ -143,8 +163,8 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="caption" destination="Gxe-wx-aCx" id="iW8-7v-ugH"/>
-                                            <outlet property="imageview" destination="RSc-L7-Zq9" id="Hz2-vT-WyZ"/>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="DRh-nU-5F8"/>
+                                            <outlet property="multiLabel" destination="ToS-Lf-hxR" id="YwM-me-Dmm"/>
+                                            <outlet property="thumbview" destination="RSc-L7-Zq9" id="zSa-lu-cDg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -174,7 +194,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkn-z9-rAN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="518" y="260"/>
+            <point key="canvasLocation" x="673" y="109"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Y18-88-NhX">
@@ -192,10 +212,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgS-TK-NVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="520" y="1090"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Comment_Share_Sina" width="25" height="25"/>
         <image name="Splash_Logo_Plus" width="768" height="285"/>
         <image name="launch.jpg" width="640" height="1136"/>
     </resources>

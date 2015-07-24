@@ -34,13 +34,19 @@ class StoriesViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     // MARK: - tableview datasource
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return newsManager.sharedManager.news[section].news.count
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 3
+        return newsManager.sharedManager.news.count
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if let cell = tableview.dequeueReusableCellWithIdentifier("storiesCell", forIndexPath: indexPath) as? StoriesTableViewCell {
+            let news = newsManager.sharedManager.news[indexPath.section].news[indexPath.row]
+            cell.caption?.text = news.title
+            if let image = news.images {
+                cell.thumburl = image[0]
+            }
+            cell.multi = news.multiPic
             return cell
         }
         return StoriesTableViewCell()
@@ -56,6 +62,23 @@ class StoriesViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 106
+    }
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UILabel()
+        view.backgroundColor = UIColor(red: 0.098, green: 0.565, blue: 0.827, alpha: 1)
+        view.textColor = UIColor.whiteColor()
+        view.textAlignment = .Center
+        
+        let formater = NSDateFormatter()
+        let news = newsManager.sharedManager.news[section - 1]
+        formater.dateFormat = "yyyyMMdd"
+        let day = "\(news.date!)"
+        print(day)
+        if let date = formater.dateFromString(day) {
+            formater.dateFormat = "MMM d EEEE"
+            view.text = formater.stringFromDate(date)
+        }
+        return view as UIView
     }
     
     /*
